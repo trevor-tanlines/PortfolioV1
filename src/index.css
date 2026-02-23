@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* This is so tailwind can work with my project */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #e8e8e8;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; /* This is so scroll bars (sideways ones) dont appear when I add 3D shit */
+}
+
