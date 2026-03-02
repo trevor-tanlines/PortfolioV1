@@ -1,4 +1,37 @@
-import { motion } from 'framer-motion';
+ import { motion } from 'framer-motion';
+
+ const codingProjects = [
+  {
+    title: 'Project Juan',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    tech: ['React', 'Node.js'],
+    githubLink: '#',
+  },
+ ];
+
+ const videoProjects = [
+  {
+    title: 'Video Project 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    videoLink: '#',
+  },
+  {
+    title: 'Video Project 2',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    videoLink: '#',
+  },
+ ];
+
+ const glitchVariants = {
+  normal: { x: 0, y: 0, opacity: 1 },
+  glitch: {
+     skewX: [-1, 1, -1, 0],
+     x: [-3, 3, -3, 0], 
+    opacity: [1, 0.8, 1, 1],
+    transition: {duration: 0.3, ease: 'easeInOut'},
+    },
+};
+// muh glitch effect
 
 function ProjectCard({ project, index }) {
   return (
@@ -8,6 +41,8 @@ function ProjectCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.15 }}
       viewport={{ once: true}}
+      variants={glitchVariants}
+      whileHover="glitch"
     >
 
       <div className='text-6xl font-bold shrink-0' style={{ color: '#2a2a2a'}}>
@@ -19,7 +54,7 @@ function ProjectCard({ project, index }) {
         <p className='text-[#aaaaaa] leading-relaxed'>{project.description}</p>
 
         <div className='flex flex-wrap gap-2'>
-          {project.tags.map((tech, i) => (
+          {project.tech.map((tech, i) => (
             <span
               key={i}
               className='text-xs px-2 py-1 rounded'
@@ -43,6 +78,8 @@ function VideoCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.15 }}
       viewport={{ once: true}}
+      variants={glitchVariants}
+      whileHover="glitch"
     >
 
       <h3 className='text-2xl font-semibold text-[#e8e8e8]'>{project.title}</h3>
@@ -62,7 +99,7 @@ function Projects() {
           <motion.h2
             className='text-5xl font-bold'
             initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 0, y: 30}}
+            whileInView={{ opacity: 1, y: 30}}
             transition={{ duration: 0.5}}
             viewport={{ once: true }}
           >
@@ -83,11 +120,11 @@ function Projects() {
             <motion.h2
               className='text-5xl font-bold'
               initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 0, y: 30}}
+              whileInView={{ opacity: 1, y: 30}}
               transition={{ duration: 0.5}}
               viewport={{ once: true }}
             >
-              Video <span style={{ color: '#cc0000'}}>Videos</span>
+              My <span style={{ color: '#cc0000'}}>Videos</span>
             </motion.h2>
             
             <div className='flex flex-col gap-6'>
