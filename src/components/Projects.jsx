@@ -1,5 +1,40 @@
 import { motion } from 'framer-motion';
 
+function ProjectCard({ project, index }) {
+  return (
+    <motion.div
+      className='flex flex-col md:flex-row gap-8 p-8 rounded-lg border border-[#2a2a2a] bg-[#1f1f1f]'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.15 }}
+      viewport={{ once: true}}
+    >
+
+      <div className='text-6xl font-bold shrink-0' style={{ color: '#2a2a2a'}}>
+        {String(index + 1).padStart(2, '0')}
+      </div>
+
+      <div className='flex flex-col gap-4 flex-1'>
+        <h3 className='text-2xl font-semibold text-[#e8e8e8]'>{project.title}</h3>
+        <p className='text-[#aaaaaa] leading-relaxed'>{project.description}</p>
+
+        <div className='flex flex-wrap gap-2'>
+          {project.tags.map((tech, i) => (
+            <span
+              key={i}
+              className='text-xs px-2 py-1 rounded'
+              style={{ backgroundColor: '#2a2a2a', color: '#ff6b35' }}
+            >
+              {tech}
+            </span>
+          ))}
+      </div>
+
+      </div>
+    </motion.div>
+  );
+}
+
 function Projects() {
   return (
     <section className='w-full min-h-screen flex items-center justify-center px-20 py-20'>
@@ -44,6 +79,7 @@ function Projects() {
               ))}
             </div>
           </div>
+      {/* This is where ill put my video projects...(when i finish them LOL) */}
 
       </div>
     </section>
