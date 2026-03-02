@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
+
 function Skills() {
   return (
     <section>
-      <h1>Skills</h1>
+      <h2>My Skills</h2>
     </section>
   )
 }
