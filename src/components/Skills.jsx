@@ -35,10 +35,8 @@ function Skills() {
       </motion.h2>
         {/* The title area */}
 
-      <div className='flex flex-col gap-12'></div>
-    </div>
-
-      {skills.map((group, groupIndex) => (
+      <div className='flex flex-col gap-12'>
+        {skills.map((group, groupIndex) => (
         <div key={groupIndex}>
           <h3>{group.category}</h3>
 
@@ -47,9 +45,12 @@ function Skills() {
               <span key={skillIndex}>{skill}</span>
             ))}
           </div>
+      </div>
 
-        </div>
       ))}
+      </div>
+
+      </div>
     </section>
   )
 }
