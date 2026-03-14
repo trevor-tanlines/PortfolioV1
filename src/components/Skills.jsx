@@ -17,6 +17,7 @@ const skills = [
     items: ['Python'],
   },
 ]
+// If i need to add more skills 4 l8r i can do it here
 
 function Skills() {
   return (
@@ -35,25 +36,40 @@ function Skills() {
       </motion.h2>
         {/* The title area */}
 
-      <div className='flex flex-col gap-12'>
+      <div className='flex flex-col gap-12'> {/* loops through each skill */}
         {skills.map((group, groupIndex) => (
-        <div key={groupIndex} className='flex flex-col gap-4'>
+          <motion.div 
+          key={groupIndex}
+          className='flex flex-col gap-4'
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y:0 }}
+          transition={{ duration: 0.5, delay: groupIndex * 0.2 }}
+          viewport={{ once: true }}
+          > {/* this is the fade and pop up effect  with a slight delay so they dont run into each other and look weird*/}
 
           <h3 className='text-lg font-medium' style={{color: group.color}}>
             {group.category}
           </h3>
 
-          <div>
+        <div key={groupIndex} className='flex flex-wrap gap-4'>
             {group.items.map((skill, skillIndex) => (
-              <span key={skillIndex}
-                className='px-4 py-2 rounded text-sm text-[#e8e8e8]'
-                style={{ backgroundColor: '#f1f1f1', border: '1px solid ${group.color}33' }}
+              <motion.span 
+               key={skillIndex}
+               className='px-4 py-2 rounded text-sm text-[#e8e8e8] border-0'
+              style={{ backgroundColor: '#1f1f1f', border: `1px solid ${group.color}33` }} // border opacity 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{ duration: 0.3, delay: skillIndex * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ borderColor: group.color, boxShadow: `0 0 10px ${group.color}44`, scale: 1.05}} // glow intensity + hover effect/scale
               >
-              {skill}</span>
+
+              {skill}
+            </motion.span>
             ))}
           </div>
-      </div>
 
+        </motion.div>
       ))}
       </div>
 
