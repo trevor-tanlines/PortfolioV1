@@ -37,12 +37,19 @@ function Skills() {
 
       <div className='flex flex-col gap-12'>
         {skills.map((group, groupIndex) => (
-        <div key={groupIndex}>
-          <h3>{group.category}</h3>
+        <div key={groupIndex} className='flex flex-col gap-4'>
+
+          <h3 className='text-lg font-medium' style={{color: group.color}}>
+            {group.category}
+          </h3>
 
           <div>
             {group.items.map((skill, skillIndex) => (
-              <span key={skillIndex}>{skill}</span>
+              <span key={skillIndex}
+                className='px-4 py-2 rounded text-sm text-[#e8e8e8]'
+                style={{ backgroundColor: '#f1f1f1', border: '1px solid ${group.color}33' }}
+              >
+              {skill}</span>
             ))}
           </div>
       </div>
