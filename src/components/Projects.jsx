@@ -12,8 +12,8 @@
  const videoProjects = [
   {
     title: 'Video Project 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    videoLink: '#',
+    description: 'A commercial I edited for a Project, The animations were all originals done by me. ',
+    videoLink: 'https://youtu.be/sWO6YiC6nuE',
   },
   {
     title: 'Video Project 2',
