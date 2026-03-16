@@ -2,10 +2,10 @@
 
  const codingProjects = [
   {
-    title: 'Project Juan',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Aether Project',
+    description: 'A file scanner, storage, and categorization app built with a team of fellow student programmers, targeted towards the elderly to help them store and maintain important documents virtually. ',
     tech: ['React', 'Node.js'],
-    githubLink: '#',
+    githubLink: 'https://github.com/1medi/aether',
   },
  ];
 
@@ -85,6 +85,17 @@ function VideoCard({ project, index }) {
       <h3 className='text-2xl font-semibold text-[#e8e8e8]'>{project.title}</h3>
       <p className='text-[#aaaaaa] leading-relaxed'>{project.description}</p>
 
+    {project.videoLink !== '#' && (
+    
+        <a href={project.videoLink}
+        className="text-sm text-[#cc0000] hover:text-[#ff6b35] transition-colors duration-200 w-fit"
+        target="_blank"
+        rel="noreferrer"
+    >
+        Watch →
+    </a>
+)}
+  
     </motion.div>
   );
 }
@@ -92,14 +103,14 @@ function VideoCard({ project, index }) {
 function Projects() {
   return (
     <section id='projects' className='w-full min-h-screen flex items-center justify-center px-20 py-20'>
-      <div className='ma x-w-4xl w-full flex flex-col gap-20'>
+      <div className='max-w-4xl w-full flex flex-col gap-20'>
 
 
         <div className='flex flex-col gap-10'>
           <motion.h2
             className='text-5xl font-bold'
             initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 30}}
+            whileInView={{ opacity: 1, y: 0}}
             transition={{ duration: 0.5}}
             viewport={{ once: true }}
           >
@@ -120,7 +131,7 @@ function Projects() {
             <motion.h2
               className='text-5xl font-bold'
               initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 30}}
+              whileInView={{ opacity: 1, y: 0}}
               transition={{ duration: 0.5}}
               viewport={{ once: true }}
             >
