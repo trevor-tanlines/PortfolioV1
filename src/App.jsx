@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import CursorTrail from "./components/CursorTrail";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skills />
       <Contact />
       <CursorTrail />
+      <Navbar />
     </main>
   );
 }
