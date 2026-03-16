@@ -1,4 +1,24 @@
+import { useState, useEffect } from "react"
+
 function Navbar() {
+    const [visible, setVisible] = useState(true)
+    const [lastScroll, setLastScroll] = useState(0)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY
+
+            if (currentScroll < lastScroll) {
+                setVisible(true)
+            } else {
+                setVisible(false)
+            }
+            setLastScroll(currentScroll)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+        }, [lastScroll])
+
     return (
         <nav>
             <p>Trevor</p>
