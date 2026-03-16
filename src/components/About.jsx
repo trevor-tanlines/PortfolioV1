@@ -19,7 +19,6 @@ function About() {
         </div>
 
       </div>
-      <h1>About ME</h1>
     </section>
   )
 }
