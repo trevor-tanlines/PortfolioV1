@@ -91,7 +91,7 @@ function VideoCard({ project, index }) {
 
 function Projects() {
   return (
-    <section className='w-full min-h-screen flex items-center justify-center px-20 py-20'>
+    <section id='projects' className='w-full min-h-screen flex items-center justify-center px-20 py-20'>
       <div className='ma x-w-4xl w-full flex flex-col gap-20'>
 
 

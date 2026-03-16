@@ -3,7 +3,7 @@ import ParticleNetwork from "./ParticleNetwork"
 
 function Hero () {
   return (
-    <section className="relative w-full h-screen flex items-center justify-between px-20">
+    <section id="hero" className="relative w-full h-screen flex items-center justify-between px-20">
         <ParticleNetwork />
 
 

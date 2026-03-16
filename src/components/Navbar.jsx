@@ -23,7 +23,7 @@ function Navbar() {
     return (
         <motion.nav
             className="fixed top-0 left-0 w-full px-20 py-4 flex items-center justify-between z-50"
-            style={{ backgroundColor: 'rgba(26, 26, 26, 0.85', backdropFilter: 'blur(10px)' }}
+            style={{ backgroundColor: 'rgba(26, 26, 26, 0.85)', backdropFilter: 'blur(10px)' }}
             animate={{ y: visible ? 0: -100 }}
             transition={{ duration: 0.3 }}    
         >
