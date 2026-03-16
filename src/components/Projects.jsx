@@ -64,6 +64,29 @@ function ProjectCard({ project, index }) {
             </span>
           ))}
       </div>
+      
+<div className="flex gap-4 mt-2">
+    {project.githubLink && (
+        
+        <a href={project.githubLink}
+            className="text-sm text-[#cc0000] hover:text-[#ff6b35] transition-colors duration-200"
+            target="_blank"
+            rel="noreferrer"
+        >
+            GitHub →
+        </a>
+    )}
+    {project.liveLink && (
+        
+        <a href={project.liveLink}
+            className="text-sm text-[#cc0000] hover:text-[#ff6b35] transition-colors duration-200"
+            target="_blank"
+            rel="noreferrer"
+        >
+            Live Site →
+        </a>
+    )}
+</div>
 
       </div>
     </motion.div>
