@@ -3,13 +3,12 @@ import ParticleNetwork from "./ParticleNetwork"
 
 function Hero () {
   return (
-    <section id="hero" className="relative w-full h-screen flex items-center justify-between px-20">
+    <section id="hero" className="relative w-full h-screen flex items-center justify-between px-6 md:px-20">
         <ParticleNetwork />
 
 
-      {/* Left side text that I shall add later cause Im lazy rn*/ "get lorem ipsumed idiot"}
     <motion.div
-        className="flex flex-col gap-4 z-10 relative"
+        className="flex flex-col gap-4 z-10 relative px-4"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -22,9 +21,9 @@ function Hero () {
             pointerEvents: 'none',
         }} />
 
-        <p style={{color:'#ff6b35'}} className="text-3xl">Sup! I'm</p>
-        <h1 className="text-7xl font-bold text-white">Trevor</h1>
-        <h2 className="text-3xl font-light text-[#e8e8e8]">A Frontend Dev & Video Editor</h2>
+        <p style={{color:'#ff6b35'}} className="text-xl md:text-3xl">Sup! I'm</p>
+        <h1 className="text-5xl md:text-7xl font-bold text-white">Trevor</h1>
+        <h2 className="text-xl md:text-3xl font-light text-[#e8e8e8]">A Frontend Dev & Video Editor</h2>
         <p className="text-[#aaaaaa] max-w-md mt-2">
             Designing and building Websites/Apps, and video editing, so you don't have to.
         </p>
