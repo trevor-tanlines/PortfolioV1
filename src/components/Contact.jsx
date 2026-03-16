@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { label, link } from "framer-motion/client";
 
 const contacts = [
   {
     label: "Email",
     value: "Emailfornow@gmail.com",
-    link: "emailto:Emailfornow@gmail.com",
+    link: "mailto:Emailfornow@gmail.com",
   },
   {
     label: "Github",
@@ -21,15 +20,30 @@ const contacts = [
 
 function Contact() {
   return (
-    <section>
-      <h2>Contact Me!</h2>
+    <section className="w-full min-h-screen flex items-center justify-center px-20 py-20">
+      <div className="max-w-4xl w-full flex flex-col gap-12">
 
-      {contacts.map((contact, index) => (
-        <div key={index}>
-          <p>{contact.label}</p>
-          <a href={contact.link}>{contact.value}</a>
+<h2 className="text-5xl font-bold">
+  Contact <span style={{color: '#cc0000' }}>Me</span>!
+</h2>
+{/* Title */}
+
+
+    <div className="mt-8 flex flex-col gap-6">
+      {contacts.map((contact, index) => ( 
+        <div key={index} className="flex flex-col gap-1 border-l-2 pl-4" style={{borderColor: '#cc0000'}}> {/* border thickness  and colour */}
+          <span className="text-sm text-gray-500">{contact.label}</span>
+
+          <a href={contact.link}
+          className="text-[#e8e8e8] text-lg hover:text-[#cc0000] transition-colors duration-200"
+          target="_blank"
+          rel="noreferrer"
+          >
+          {contact.value}</a>
         </div>
       ))}
+    </div>
+      </div>
     </section>
   )
 }
