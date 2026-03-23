@@ -10,7 +10,7 @@ function ParticleNetwork() {
         canvas.width = canvas.offsetWidth
         canvas.height = canvas.offsetHeight
 
-        const nodes = Array.from({ length: 60 }, () => ({
+        const nodes = Array.from({ length: 170 }, () => ({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
             speedX: (Math.random() - 0.5) * 1.8,
@@ -30,7 +30,7 @@ function ParticleNetwork() {
 
 
 
-        const maxDistance = 150
+        const maxDistance = 200
         let frame = 0
         
         const animate = () => {

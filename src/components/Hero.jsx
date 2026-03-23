@@ -4,7 +4,6 @@ import ParticleNetwork from "./ParticleNetwork"
 function Hero () {
   return (
     <section id="hero" className="relative w-full h-screen flex items-center justify-between px-6 md:px-20">
-        <ParticleNetwork />
 
 
     <motion.div

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import { section } from "framer-motion/client"
 
 function Navbar() {
     const [visible, setVisible] = useState(true)
@@ -53,7 +52,7 @@ function Navbar() {
                 {menuOpen && (
                     <motion.ul
                         className="md:hidden absolute top-full left-0 w-full flex flex-col list-none py-4"
-                        style={{ backgroundColor: 'rgba(26, 26, 26, 0.95' }}
+                        style={{ backgroundColor: 'rgba(26, 26, 26, 0.95)' }}
                         initial={{ opacity:0, y: -10 }}
                         animate={{ opacity: 1, y:0 }}
                         exit={{ opacity: 0, y: -10 }}
@@ -62,7 +61,7 @@ function Navbar() {
                         {['hero', 'about', 'projects', 'skills', 'contact'].map((section) =>
                             <li key ={section}>
                                 <a href={`#${section}`}
-                                className="block px-6 py-3 text-[#e8e8e8] hover: text-[#cc0000] transition-colors duration-200 capitalize"
+                                className="block px-6 py-3 text-[#e8e8e8] hover:text-[#cc0000] transition-colors duration-200 capitalize"
                                 onClick={() => setMenuOpen(false)}
                             >
                                 {section === 'hero' ? 'Home' : section.charAt(0).toUpperCase() + section.slice(1)}
