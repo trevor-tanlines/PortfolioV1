@@ -56,7 +56,7 @@ function Skills() {
               <motion.span 
                key={skillIndex}
                className='px-4 py-2 rounded text-sm text-[#e8e8e8] border-0'
-              style={{ backgroundColor: '#1f1f1f', border: `1px solid ${group.color}33` }} // border opacity 
+              style={{ backgroundColor: '#161616', border: `1px solid ${group.color}33` }} // border opacity 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y:0 }}
               transition={{ duration: 0.3, delay: skillIndex * 0.1 }}

@@ -36,7 +36,7 @@
 function ProjectCard({ project, index }) {
   return (
     <motion.div
-      className='flex flex-col md:flex-row gap-8 p-8 rounded-lg border border-[#2a2a2a] bg-[#1f1f1f]'
+      className='flex flex-col md:flex-row gap-8 p-8 rounded-lg border border-[#1a1a1a] bg-[#161616]'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.15 }}
@@ -45,7 +45,7 @@ function ProjectCard({ project, index }) {
       whileHover="glitch"
     >
 
-      <div className='text-6xl font-bold shrink-0' style={{ color: '#2a2a2a'}}>
+      <div className='text-6xl font-bold shrink-0' style={{ color: '#1a1a1a'}}>
         {String(index + 1).padStart(2, '0')}
       </div>
 
@@ -58,7 +58,7 @@ function ProjectCard({ project, index }) {
             <span
               key={i}
               className='text-xs px-2 py-1 rounded'
-              style={{ backgroundColor: '#2a2a2a', color: '#ff6b35' }}
+              style={{ backgroundColor: '#1a1a1a', color: '#ff6b35' }}
             >
               {tech}
             </span>
@@ -96,7 +96,7 @@ function ProjectCard({ project, index }) {
 function VideoCard({ project, index }) {
   return (
     <motion.div
-      className='flex flex-col gap-4 p-8 rounded-lg border border-[#2a2a2a] bg-[#1f1f1f]'
+      className='flex flex-col gap-4 p-8 rounded-lg border border-[#1a1a1a] bg-[#161616]'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.15 }}

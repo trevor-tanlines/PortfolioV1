@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #e8e8e8;
+  background-color: #0a0a0a;
+  color: #d4d4d4;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden; /* This is so scroll bars (sideways ones) dont appear when I add 3D shit */
 }
