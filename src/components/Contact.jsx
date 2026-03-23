@@ -20,8 +20,16 @@ const contacts = [
 
 function Contact() {
   return (
-    <section id="contact" className="w-full min-h-screen flex items-center justify-center px-20 py-20">
-      <div className="max-w-4xl w-full flex flex-col gap-12">
+    <section id="contact" className="w-full min-h-screen flex items-center justify-start px-20 py-20">
+      <div className="max-w-4xl w-full flex flex-col gap-12"
+      style={{
+        background: 'rgba(10, 10, 10, 0.75)',
+        padding: '30px',
+        borderRadius: '12px',
+        backdropFilter: 'blur(8px)',
+        width: 'fit-content',
+      }}>
+      
 
 <motion.h2 className="text-5xl font-bold"
   initial={{ opacity: 0, y:30 }}
