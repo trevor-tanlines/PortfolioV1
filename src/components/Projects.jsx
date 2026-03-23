@@ -2,7 +2,7 @@
 
  const codingProjects = [
   {
-    title: 'Aether Project',
+    title: 'Aether File Scanner & Index Project',
     description: 'A file scanner, storage, and categorization app built with a team of fellow student programmers, targeted towards the elderly to help them store and maintain important documents virtually. ',
     tech: ['React', 'Node.js'],
     githubLink: 'https://github.com/1medi/aether',
@@ -11,7 +11,7 @@
 
  const videoProjects = [
   {
-    title: 'Video Project 1',
+    title: 'Aether Commercial ',
     description: 'A commercial I edited for a Project, The animations were all originals done by me. ',
     videoLink: 'https://youtu.be/sWO6YiC6nuE',
   },

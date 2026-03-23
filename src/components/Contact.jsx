@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 const contacts = [
   {
     label: "Email",
-    value: "Emailfornow@gmail.com",
-    link: "mailto:Emailfornow@gmail.com",
+    value: "trevortan.business@gmail.com",
+    link: "mailto:trevortan.business@gmail.com",
   },
   {
     label: "Github",
-    value: "Github.com/filloutlater",
-    link: "https://github.com/filloutlater",
+    value: "Github.com/trevor-tanlines",
+    link: "https://github.com/trevor-tanlines",
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/filloutlater",
-    link: "https://linkedin.com/in/filloutlater",
+    value: "linkedin.com/in/trevor-tan",
+    link: "https://www.linkedin.com/in/trevor-tan-869aba352/",
   },
 ]
 
