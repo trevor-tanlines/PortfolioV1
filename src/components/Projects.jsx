@@ -17,9 +17,9 @@
     videoLink: 'https://youtu.be/sWO6YiC6nuE',
   },
   {
-    title: 'Video Project 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    videoLink: '#',
+    title: 'Animation Showcase',
+    description: 'A small animation I made in After Effects to demonstrate usage of effects, assets, and editing.',
+    videoLink: 'https://youtu.be/Az-EU2HOHuY',
   },
  ];
 
