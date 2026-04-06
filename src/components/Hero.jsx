@@ -20,7 +20,7 @@ function Hero () {
             pointerEvents: 'none',
         }} />
 
-        <p style={{color:'#ff6b35'}} className="text-xl md:text-3xl">Sup! I'm</p>
+        <p style={{color:'#ff6b35'}} className="text-xl md:text-3xl">Hey! I'm</p>
         <h1 className="text-5xl md:text-7xl font-bold text-white">Trevor</h1>
         <h2 className="text-xl md:text-3xl font-light text-[#e8e8e8]">A Frontend Dev & Video Editor</h2>
         <p className="text-[#aaaaaa] max-w-md mt-2">
