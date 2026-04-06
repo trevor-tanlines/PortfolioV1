@@ -28,7 +28,7 @@ function Hero () {
         </p>
 
         <motion.a
-            href="projects"
+            href="#projects"
 className="mt-3 w-fit px-6 py-3 border border-[#cc0000] text-[#ff1f1f] hover:bg-[#cc0000] hover:text-white rounded-full transition-all duration-200" whileHover={{scale: 1.05}}
             whileTap={{scale: 0.95}}
             >
